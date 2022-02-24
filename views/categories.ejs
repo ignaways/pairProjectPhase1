@@ -1,0 +1,19 @@
+<%- include('header') %> 
+<% dataCategories %> 
+<a href="/categories/add">Add Categories</a>
+    <table>
+        <tr>
+            <th>Categories</th>
+            <th>Items</th>
+            <th>action</th>
+          </tr>
+          <% dataCategories.forEach(el => { %>
+          <tr>
+            <td><%= el.name %> </td>
+            <td><%= el.Products.length %> </td>
+            <td><a href="/categories/edit/<%= el.id %>">edit</a><a href="/categories/delete/<%= el.id %>">delete</a></td>
+          </tr>
+          <% }) %>
+    </table>
+
+<%- include('footer') %> 

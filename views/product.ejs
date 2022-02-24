@@ -1,0 +1,33 @@
+<%- include('header') %> 
+<% dataProduct %>
+
+<div style="max-width: 70%; margin: auto;">
+
+<div class="column1">
+    <h2>Login</h2>
+    <a class="color" href="/signIn"> <p> Sign In </p></a>
+    <a class="color" href="/signUp"> <p> Sign Up </p></a>
+    <h2>Categories</h2>
+    <a href="/"><p class="color"> All  </p></a>
+    <% dataProduct.forEach(category => { %>
+    <a class="color" href="/product/?categoryId=<%= category.id %>"><p> <%= category.name %>  </p></a>
+    <% }) %>
+</div>
+
+
+<div class="column2">
+    <div class="row">
+      <% dataProduct.forEach(product => { %>
+        <% product.Products.forEach(e=> {%>
+        <div class="column"> 
+          <div class="card">
+             <img src="<%= e.imageUrl  %>" alt="Avatar" style="width: 100%;"/>
+            <p><%= e.name  %></p>
+          </div>
+        </div>
+        <% }) %>
+      <% }) %>
+    </div>
+</div>
+
+<%- include('footer') %> 

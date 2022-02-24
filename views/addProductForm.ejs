@@ -1,0 +1,27 @@
+<%- include('header') %> 
+<% dataCategory %> 
+
+<form action="/product/add" method="post">
+    <label>Product Name</label><br>
+    <input type="text" name="name" placeholder="name..." /><br><br>
+
+    <label>ImageUrl</label><br>
+    <input type="text" name="imageUrl" placeholder="image url..." /><br><br>
+
+    <label>Description</label><br>
+    <textarea type="text" name="description" placeholder="description..." > </textarea><br><br>
+
+    <label>Price</label><br>
+    <input type="text" name="price" placeholder="price..." /><br><br>
+
+    <label>Category:</label><br>
+    <select name="categoryId">
+        <% dataCategory.forEach(el => { %>
+            <option value="<%= el.id %>"><%= el.name %> </option>
+        <% }) %>
+    </select><br><br>
+
+    <input type="submit" value="Submit"/>
+</form>
+
+<%- include('footer') %> 

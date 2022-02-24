@@ -1,0 +1,36 @@
+<%- include('header') %> 
+<% dataProduct %>
+<% session %> 
+
+<div style="max-width: 70%; margin: auto;">
+
+<div class="column1">
+    <h3 style="color: red;"> Hello, <%= session.userName %> </h3>
+    <a class="color" href="/product/add"> <p> Add Product </p></a>
+    <a class="color" href="/categories/add"> <p> Add Categories </p></a>
+    <a class="color" href="/logOut"> <p> Logout </p></a>
+    <h2>Categories</h2>
+    <a class="color" href="/product/admin"> <p> All  </p></a>
+    <% dataProduct.forEach(category => { %>
+      <a class="color" href="/product/admin?categoryId=<%= category.id %>"><p> <%= category.name %>  </p></a>
+    <% }) %>
+</div>
+
+<div class="column2">
+    <div class="row">
+      <% dataProduct.forEach(product => { %>
+        <% product.Products.forEach(e=> {%>
+        <div class="column"> 
+          <div class="card">
+             <img src="<%= e.imageUrl  %>" alt="Avatar" style="width: 100%;"/>
+            <p><%= e.name  %></p>
+            <p><%= e.price %></p>
+            <a href="/product/edit/<%= e.id %>"> update </a>  <a href="/product/delete/<%= e.id %>"> delete </a>
+          </div>
+        </div>
+        <% }) %>
+      <% }) %>
+    </div>
+</div>
+
+<%- include('footer') %> 

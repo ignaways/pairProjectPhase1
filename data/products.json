@@ -1,0 +1,138 @@
+[
+    {
+        "name": "Short Sleeve",
+        "description": "The Paris design team, led by Christophe Lemaire, created a new collection of LifeWear using innovative fabrics and modern designs.",
+        "price": 149000,
+        "imageUrl": "https://image.uniqlo.com/UQ/ST3/id/imagesgoods/441600/item/idgoods_09_441600.jpg?width=1008&impolicy=quality_75",
+        "categoryId": 1,
+        "userId":1
+    },
+    {
+        "name": "AIRism Cotton",
+        "description": "The crew neck design with a tighter collar is key to the design.",
+        "price": 199000,
+        "imageUrl": "https://image.uniqlo.com/UQ/ST3/id/imagesgoods/425974/item/idgoods_02_425974.jpg?width=1008&impolicy=quality_75",
+        "categoryId": 1,
+        "userId":1
+    },
+    {
+        "name": "Slub Jersey",
+        "description": "Slub cotton has a distinctive texture.",
+        "price": 149000,
+        "imageUrl": "https://image.uniqlo.com/UQ/ST3/id/imagesgoods/446707/item/idgoods_37_446707.jpg?width=1008&impolicy=quality_75",
+        "categoryId": 1,
+        "userId":1
+    },
+    {
+        "name": "Drape Short",
+        "description": "Smooth to the touch with a glossy sheen.",
+        "price": 149000,
+        "imageUrl": "https://image.uniqlo.com/UQ/ST3/id/imagesgoods/447357/item/idgoods_09_447357.jpg?width=1600&impolicy=quality_75",
+        "categoryId": 1,
+        "userId":1
+    },
+    {
+        "name": "Washable Mock",
+        "description": "Versatile sweater with a voluminous yet lightweight feel.",
+        "price": 399000,
+        "imageUrl": "https://image.uniqlo.com/UQ/ST3/id/imagesgoods/447963/item/idgoods_09_447963.jpg?width=1600&impolicy=quality_75",
+        "categoryId": 2,
+        "userId":1
+    },
+    {
+        "name": "Long Sleeve",
+        "description": "With the elegant color and glossy surface unique to cotton, this styles for both dressier and more casual looks.",
+        "price": 399000,
+        "imageUrl": "https://image.uniqlo.com/UQ/ST3/id/imagesgoods/445578/item/idgoods_01_445578.jpg?width=1008&impolicy=quality_75",
+        "categoryId": 2,
+        "userId":1
+    },
+    {
+        "name": "Full Needle Sleeve",
+        "description": "The Uniqlo U collection is the realization of a dedicated and skilled team of international designers based at our Paris Research.",
+        "price": 399000,
+        "imageUrl": "https://image.uniqlo.com/UQ/ST3/id/imagesgoods/445189/item/idgoods_04_445189.jpg?width=1008&impolicy=quality_75",
+        "categoryId": 2,
+        "userId":1
+    },
+    {
+        "name": "3D Knit Cardigan",
+        "description": "Lightweight blend fabric has a glossy sheen and drape.",
+        "price": 599000,
+        "imageUrl": "https://image.uniqlo.com/UQ/ST3/id/imagesgoods/447411/item/idgoods_13_447411.jpg?width=1008&impolicy=quality_75",
+        "categoryId": 3,
+        "userId":1
+    },
+    {
+        "name": "Relaxed Cardigan",
+        "description": "With UV Protection technology, Longer length with slits in the hem.",
+        "price": 299000,
+        "imageUrl": "https://image.uniqlo.com/UQ/ST3/id/imagesgoods/445837/item/idgoods_50_445837.jpg?width=1008&impolicy=quality_75",
+        "categoryId": 3,
+        "userId":1
+    },
+    {
+        "name": "Dry Pique Polo",
+        "description": "A versatile high-performance polo shirt that is perfect for both business and everyday wear.",
+        "price": 299000,
+        "imageUrl": "https://image.uniqlo.com/UQ/ST3/id/imagesgoods/441603/item/idgoods_58_441603.jpg?width=1008&impolicy=quality_75",
+        "categoryId": 4,
+        "userId":1
+    },
+    {
+        "name": "AIRism Pique",
+        "description": "The chest was broadened, sleeves lengthened, and the neck exposed to achieve a streamlined fit befitting the fabric.",
+        "price": 299000,
+        "imageUrl": "https://image.uniqlo.com/UQ/ST3/id/imagesgoods/436181/item/idgoods_00_436181.jpg?width=1008&impolicy=quality_75",
+        "categoryId": 4,
+        "userId":1
+    },
+    {
+        "name": "DRY-EX Polo Shirt",
+        "description": "Sweat-wicking DRY-EX technology, as worn by athletes.",
+        "price": 299000,
+        "imageUrl": "https://image.uniqlo.com/UQ/ST3/id/imagesgoods/449091/item/idgoods_08_449091.jpg?width=1008&impolicy=quality_75",
+        "categoryId": 4,
+        "userId":1
+    },
+    {
+        "name": "Broadcloth Striped",
+        "description": "Double-stitched for a casual look with puckering at the seams.",
+        "price": 399000,
+        "imageUrl": "https://image.uniqlo.com/UQ/ST3/id/imagesgoods/442063/item/idgoods_12_442063.jpg?width=1008&impolicy=quality_75",
+        "categoryId": 5,
+        "userId":1
+    },
+    {
+        "name": "Extra Fine Cotton",
+        "description": "Pre-washed and specially finished for a luxuriously soft touch with a casual feel.",
+        "price": 499000,
+        "imageUrl": "https://image.uniqlo.com/UQ/ST3/id/imagesgoods/449468/item/idgoods_67_449468.jpg?width=1008&impolicy=quality_75",
+        "categoryId": 5,
+        "userId":1
+    },
+    {
+        "name": "Premium Linen",
+        "description": "100% premium European linen.",
+        "price": 499000,
+        "imageUrl": "https://image.uniqlo.com/UQ/ST3/id/imagesgoods/446845/item/idgoods_53_446845.jpg?width=1008&impolicy=quality_75",
+        "categoryId": 6,
+        "userId":1
+    },
+    {
+        "name": "Rayon Blouse",
+        "description": "Won't wrinkle even after washing.",
+        "price": 299000,
+        "imageUrl": "https://image.uniqlo.com/UQ/ST3/id/imagesgoods/433629/item/idgoods_04_433629.jpg?width=1008&impolicy=quality_75",
+        "categoryId": 6,
+        "userId":1
+    },
+    {
+        "name": "triped Stand Collar",
+        "description": " A luxuriously soft shirt made of extra-fine cotton.",
+        "price": 399000,
+        "imageUrl": "https://image.uniqlo.com/UQ/ST3/id/imagesgoods/448810/item/idgoods_30_448810.jpg?width=1008&impolicy=quality_75",
+        "categoryId": 6,
+        "userId":1
+    }
+]

@@ -1,0 +1,23 @@
+<%- include('header') %> 
+<% dataProduct %> 
+<form action="/product/edit/<%= dataProduct.id %> " method="post">
+    <label>Product Name</label><br>
+    <input type="text" name="name" value="<%= dataProduct.name %>" /><br><br>
+
+    <label>ImageUrl</label><br>
+    <input type="text" name="imageUrl" value="<%= dataProduct.imageUrl %>" /><br><br>
+
+    <label>Description</label><br>
+    <textarea style = "white-space: pre-line;" type="text" name="description"> <%= dataProduct.description %></textarea><br><br>
+
+    <label>Price</label><br>
+    <input type="text" name="price" value="<%= dataProduct.price %>" /><br><br>
+
+    <!-- <label>Category:</label><br>
+    <select name="categoryId">
+            <option value=""> </option>
+    </select><br><br> -->
+    <input type="submit" value="Submit"/>
+</form>
+
+<%- include('footer') %> 
