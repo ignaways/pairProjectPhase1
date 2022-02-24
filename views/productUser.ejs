@@ -1,18 +1,18 @@
 <%- include('header') %> 
 <% dataProduct %>
 <% session %> 
+<% rupiah %> 
 
 <div style="max-width: 70%; margin: auto;">
 
 <div class="column1">
-    <h3 style="color: red;"> <%= session.userformatName %> </h3>
-    <a class="color" href="/product/add"> <p> Add Product </p></a>
-    <a class="color" href="/categories"> <p> Show All Categories </p></a>
+    <h3 style="color: red;"> Hello, <%= session.userName %> </h3>
+    <a class="color" href="/profile/add "> <p> My Account </p></a>
     <a class="color" href="/logOut"> <p> Logout </p></a>
     <h2>Categories</h2>
-    <a class="color" href="/product/admin"> <p> All  </p></a>
+    <a class="color" href="/product/user"> <p> All </p></a>
     <% dataProduct.forEach(category => { %>
-      <a class="color" href="/product/admin?categoryId=<%= category.id %>"><p> <%= category.name %>  </p></a>
+      <a class="color" href="/product/user?categoryId=<%= category.id %>"><p> <%= category.name %>  </p></a>
     <% }) %>
 </div>
 
@@ -25,7 +25,6 @@
              <img src="<%= e.imageUrl  %>" alt="Avatar" style="width: 100%;"/>
             <p><%= e.name  %></p>
             <p style="color: red; font-weight: bold;"><%= rupiah(e.price)  %></p>
-            <a href="/product/edit/<%= e.id %>"> update </a>  <a href="/product/delete/<%= e.id %>"> delete </a>
           </div>
         </div>
         <% }) %>

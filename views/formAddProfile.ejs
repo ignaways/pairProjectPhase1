@@ -1,18 +1,17 @@
 <%- include('header') %> 
-<% session %> 
-<% result %> 
-<% console.log(result, 'ejs'); %> 
+ 
 <a href="/product/user">Back</a>
-<h5>WELCOME <%=session.role%></h5><br>
-<h1><%=result.Profiles.formatName%></h1>
-    <form action="/profile" method="post">
-      <% result.forEach(el => { %>
+<h5>WELCOME</h5><br>
+<h1></h1>
+    <form action="/product/add" method="post"> 
         <label for="name">Name:</label><br />
-        <input type="text" id="name" name="name" value="<%=el.name%>" /><br />
+        <input type="text" id="name" name="name" value="" /><br />
         <label for="address">Address:</label><br />
         <input type="text" id="address" name="address" value="" /><br /><br />
-        <label for="gender">Gender:</label><br />
-        <input type="text" id="gender" name="gender" value="" /><br />
+        <input type="radio" id="gender" name="gender" value="male">
+          <label for="gender">Male</label><br>
+        <input type="radio" id="gender" name="gender" value="female">
+          <label for="gender">Female</label><br>
         <label for="phoneNumber">Phone Number:</label><br />
         <input type="text" id="lname" name="lname" value="" /><br /><br />
         <label for="email">Email:</label><br />
@@ -20,7 +19,5 @@
         <label for="birthdayDate">Birthday:</label>
         <input type="date" id="birthdayDate" name="birthdayDate" />
         <input type="submit" value="Submit" />
-      <% }) %>
     </form>
 <%- include('footer') %> 
-

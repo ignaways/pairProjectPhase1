@@ -1,5 +1,6 @@
 <%- include('header') %> 
 <% dataProduct %> 
+<a href="/product/admin">Back</a>
 <form action="/product/edit/<%= dataProduct.id %> " method="post">
     <label>Product Name</label><br>
     <input type="text" name="name" value="<%= dataProduct.name %>" /><br><br>

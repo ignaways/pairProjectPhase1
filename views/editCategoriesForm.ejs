@@ -1,6 +1,6 @@
 <%- include('header') %> 
 <% dataCategory %> 
-<% console.log(dataCategory.name); %> 
+<a href="/categories">Back</a>
 <form action="/categories/edit/<%= dataCategory.id %>" method="post">
     <label >Category</label><br>
     <input type="text" name="name" value="<%= dataCategory.name %>" /><br><br>

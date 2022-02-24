@@ -1,6 +1,7 @@
 <%- include('header') %> 
 <% dataCategory %> 
-
+<% session %> 
+<a href="/product/admin">Back</a>
 <form action="/product/add" method="post">
     <label>Product Name</label><br>
     <input type="text" name="name" placeholder="name..." /><br><br>
@@ -21,6 +22,7 @@
         <% }) %>
     </select><br><br>
 
+    <input type="text" style="display: none;" name="idUser" value="<%= session.userName %>" />
     <input type="submit" value="Submit"/>
 </form>
 

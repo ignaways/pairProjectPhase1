@@ -13,6 +13,13 @@ module.exports = (sequelize, DataTypes) => {
       User.hasMany(models.Product, { foreignKey: "userId" });
       User.belongsTo(models.Profile, { foreignKey: "profileId" });
     }
+    get formatName(){
+      if(this.role === `admin`){
+        return `Hello Admin ${this.userName}`
+      } else {
+        return `Hello User ${this.userName}`
+      }
+    }
   }
   User.init(
     {

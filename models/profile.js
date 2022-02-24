@@ -15,9 +15,13 @@ module.exports = (sequelize, DataTypes) => {
     }
 
     get honorific(){
-      
+      let result
       if (this.gender === `male`){
-
+        result = `Mr. ${this.name}`
+      } else if (this.gender === `female`){
+        result = `Mrs. ${this.name}`
+      } else {
+        result = `${this.name}`
       }
     }
   }
