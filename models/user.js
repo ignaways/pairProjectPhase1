@@ -31,10 +31,6 @@ module.exports = (sequelize, DataTypes) => {
             args: true,
             msg: `Name is REQUIRED`,
           },
-          // notNull: {
-          //   args: true,
-          //   msg: `Name must ALPHABET`,
-          // },
         },
       },
       email: {
